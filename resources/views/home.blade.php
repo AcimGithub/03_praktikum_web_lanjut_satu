@@ -7,8 +7,13 @@
 @stop
 
 @section('content')
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cumque exercitationem eum accusantium, ducimus eos. Tenetur vitae unde accusantium? Omnis quos vitae officia voluptatum exercitationem amet velit tempore quaerat eius!</p>
-   
+    <ul>
+        @foreach ($ages as $data)
+        <li>
+            {{$data->ages}}
+        </li>
+        @endforeach
+    </ul>
 @stop
 
 @section('footer')

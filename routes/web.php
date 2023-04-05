@@ -14,9 +14,6 @@ use App\Http\Controllers\ContactUsController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
 Route::get('/about-us', function () {
     return view('about-us');
@@ -40,7 +37,7 @@ Route::prefix('program')->group(function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\WargaController::class, 'index']);
 
 Route::resource('contact-us', ContactUsController::class)->only(['index']);
 
