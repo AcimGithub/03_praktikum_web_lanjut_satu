@@ -11,5 +11,6 @@ class WargaController extends Controller
     {
         $age = Ages::all();
         return view('home', ['ages' => $age]);
+        
     }
 }

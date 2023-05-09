@@ -9,7 +9,7 @@ class Ages extends Model
 {
     use HasFactory;
 
-    protected $table = 'ages';
+    protected $table = 'penduduk';
 
     public $timestamps = false;
     
